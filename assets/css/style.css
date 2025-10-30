@@ -75,8 +75,12 @@ aside .logo strong {
 aside nav li {
   border-radius: 7px;
 }
-aside nav li:hover {
+aside nav li:hover,
+aside nav li:has(label input:checked) {
   background-color: var(--bg-main);
+}
+aside nav li:active {
+    background-color: #fff;
 }
 aside nav li label {
   display: flex;
@@ -98,7 +102,8 @@ aside nav li label .num {
   align-items: center;
   border-radius: 50%;
 }
-aside nav li label:hover .num {
+aside nav li label:hover .num,
+aside nav li:has(label input:checked) .num {
   background-color: #fff;
 }
 aside nav li label .checking,
@@ -164,6 +169,24 @@ header .btns button {
 header .btns button:hover {
   background-color: #013533;
 }
+header .btns .added {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  background-color: #d5e2e2;
+  padding: 10px 20px;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+header .btns .added i {
+  background-color: #004846;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
 main {
   background-color: var(--bg-main);
   padding: 85.39px 20px 20px 280px;
@@ -172,6 +195,7 @@ main {
 main .head {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 main .head button {
   background-color: #fff;
@@ -186,6 +210,35 @@ main .head button {
 }
 main .head button:hover {
   background-color: var(--bg-main);
+}
+main .head .sort-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 15px);
+  background-color: #dfebeb;
+  padding: 5px;
+  border-radius: 10px;
+  display: none;
+  z-index: 9999;
+}
+main .head .sort-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .head .sort-menu ul li {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .head .sort-menu ul li:hover {
+  background-color: #d3dddd;
+}
+main .head .sort-menu ul li:active{
+    background-color: #dfebeb;
 }
 .container {
   display: flex;
@@ -242,6 +295,7 @@ main .head button:hover {
   font-weight: normal;
 }
 .container .card .card-head .icon {
+  position: relative;
   border: var(--border);
   border-radius: 4px;
   padding: 3px 5px;
@@ -251,6 +305,33 @@ main .head button:hover {
 }
 .container .card .card-head .icon:hover {
   background-color: var(--bg-main);
+}
+.container .card .card-head .icon .rounded-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  display: none;
+  z-index: 9999;
+}
+.container .card .card-head .icon .rounded-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #f0f3f3;
+}
+.container .card .card-head .icon .rounded-menu ul li {
+  padding: 7px 0 7px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.container .card .card-head .icon .rounded-menu ul li:hover {
+  background-color: #dbe4e4;
+}
+.container .card .card-head .icon .rounded-menu ul li:hover:active {
+  background-color: #f0f3f3;
 }
 .container .card .card-body {
   padding: 15px 10px;
@@ -272,7 +353,8 @@ main .head button:hover {
   font-size: 13px;
   cursor: pointer;
 }
-.container .card .card-body .skill span:hover {
+.container .card .card-body .skill span:hover,
+.container .card .card-body .skill span.active {
   background-color: var(--bg-green);
   color: #fff;
 }
@@ -335,10 +417,10 @@ main .head button:hover {
   }
 }
 @media (max-width: 767px) {
-    header .btns {
-        display: none;
-    }
-    .container .card {
-        width: 100%;
-    }
+  header .btns {
+    display: none;
+  }
+  .container .card {
+    width: 100%;
+  }
 }
