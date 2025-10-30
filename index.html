@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icons DDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style Css Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Normalize Css Link -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- Google Font (Poppins Font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <aside>
+      <a href="#" class="logo">
+        <span><i class="bx bx-bookmark"></i></span>
+        <strong>Bookmark Manager</strong>
+      </a>
+      <nav>
+        <ul>
+          <div class="links">
+            <li><i class="bx bx-home"></i> <span>Home</span></li>
+            <li><i class="bx bx-box"></i> <span>Archived</span></li>
+          </div>
+          <div class="check">
+            <h4>Tags</h4>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Ai</span></div>
+
+                <span class="num">3</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Comunity</span></div>
+
+                <span class="num">2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking">
+                  <input type="checkbox" /> <span>Compatibility</span>
+                </div>
+
+                <span class="num">6</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>CSS</span></div>
+
+                <span class="num">4</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Design</span></div>
+
+                <span class="num">8</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Framework</span></div>
+
+                <span class="num">2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Git</span></div>
+
+                <span class="num">1</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>HTML</span></div>
+
+                <span class="num">2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>JavaScript</span></div>
+
+                <span class="num">3</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Layout</span></div>
+
+                <span class="num">3</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Learning</span></div>
+
+                <span class="num">6</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking">
+                  <input type="checkbox" /> <span>Performance</span>
+                </div>
+
+                <span class="num">2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Practice</span></div>
+
+                <span class="num">5</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Reference</span></div>
+
+                <span class="num">2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Tips</span></div>
+
+                <span class="num">5</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Tools</span></div>
+
+                <span class="num">4</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="checking"><input type="checkbox" /> <span>Tutorial</span></div>
+
+                <span class="num">3</span>
+              </label>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </aside>
+    <header>
+      <div class="search">
+        <i class="bx bx-menu menu"></i>
+        <div class="field">
+          <i class="bx bx-search"></i>
+          <input type="search" name="search" placeholder="Search by title..." />
+        </div>
+      </div>
+      <div class="btns">
+        <button><i class="bx bx-bookmark-plus"></i>Add Bookmark</button>
+      </div>
+    </header>
+    <main>
+      <div class="head">
+        <h2>All bookmarks</h2>
+        <button><i class="bx bx-sort"></i> Sort By</button>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/frontendmentor.svg" alt="" />
+              <div class="headings">
+                <h3>Frontend Mentor</h3>
+                <h5>frontendmentor.io</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/firefox.svg" alt="" />
+              <div class="headings">
+                <h3>MDN Web Docs</h3>
+                <h5>developer.mozilla.org</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              The MDN Web Docs site provides information about Open Web
+              technologies including HTML, CSS. and APIs for both web sites and
+              progressive web apps.
+            </p>
+            <div class="skill">
+              <span>Reference</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 152</span>
+                <span><i class="bx bx-time-five"></i> 4 Nov</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/react.svg" alt="" />
+              <div class="headings">
+                <h3>React Docs</h3>
+                <h5>react.dev</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              The library or framework is react native for web and native user
+              interfaces. Build user interfaces out Of individual pieces called
+              components.
+            </p>
+            <div class="skill">
+              <span>JS</span>
+              <span>Framwwork</span>
+              <span>Reference</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 0</span>
+                <span><i class="bx bx-time-five"></i> Never</span>
+                <span><i class="bx bx-credit-card-front"></i> 20 Feb</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/claude.svg" alt="" />
+              <div class="headings">
+                <h3>Claude</h3>
+                <h5>calude.ai</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/webdev.svg" alt="" />
+              <div class="headings">
+                <h3>Web.Dev</h3>
+                <h5>web.dev</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/tailwind.svg" alt="" />
+              <div class="headings">
+                <h3>Tailwind CSS</h3>
+                <h5>tailwindcss.com</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/frontendmentor.svg" alt="" />
+              <div class="headings">
+                <h3>Frontend Mentor</h3>
+                <h5>frontendmentor.io</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/firefox.svg" alt="" />
+              <div class="headings">
+                <h3>MDN Web Docs</h3>
+                <h5>developer.mozilla.org</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              The MDN Web Docs site provides information about Open Web
+              technologies including HTML, CSS. and APIs for both web sites and
+              progressive web apps.
+            </p>
+            <div class="skill">
+              <span>Reference</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 152</span>
+                <span><i class="bx bx-time-five"></i> 4 Nov</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/react.svg" alt="" />
+              <div class="headings">
+                <h3>React Docs</h3>
+                <h5>react.dev</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              The library or framework is react native for web and native user
+              interfaces. Build user interfaces out Of individual pieces called
+              components.
+            </p>
+            <div class="skill">
+              <span>JS</span>
+              <span>Framwwork</span>
+              <span>Reference</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 0</span>
+                <span><i class="bx bx-time-five"></i> Never</span>
+                <span><i class="bx bx-credit-card-front"></i> 20 Feb</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/claude.svg" alt="" />
+              <div class="headings">
+                <h3>Claude</h3>
+                <h5>calude.ai</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/webdev.svg" alt="" />
+              <div class="headings">
+                <h3>Web.Dev</h3>
+                <h5>web.dev</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/tailwind.svg" alt="" />
+              <div class="headings">
+                <h3>Tailwind CSS</h3>
+                <h5>tailwindcss.com</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/frontendmentor.svg" alt="" />
+              <div class="headings">
+                <h3>Frontend Mentor</h3>
+                <h5>frontendmentor.io</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/firefox.svg" alt="" />
+              <div class="headings">
+                <h3>MDN Web Docs</h3>
+                <h5>developer.mozilla.org</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              The MDN Web Docs site provides information about Open Web
+              technologies including HTML, CSS. and APIs for both web sites and
+              progressive web apps.
+            </p>
+            <div class="skill">
+              <span>Reference</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 152</span>
+                <span><i class="bx bx-time-five"></i> 4 Nov</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/react.svg" alt="" />
+              <div class="headings">
+                <h3>React Docs</h3>
+                <h5>react.dev</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              The library or framework is react native for web and native user
+              interfaces. Build user interfaces out Of individual pieces called
+              components.
+            </p>
+            <div class="skill">
+              <span>JS</span>
+              <span>Framwwork</span>
+              <span>Reference</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 0</span>
+                <span><i class="bx bx-time-five"></i> Never</span>
+                <span><i class="bx bx-credit-card-front"></i> 20 Feb</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/claude.svg" alt="" />
+              <div class="headings">
+                <h3>Claude</h3>
+                <h5>calude.ai</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/webdev.svg" alt="" />
+              <div class="headings">
+                <h3>Web.Dev</h3>
+                <h5>web.dev</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <div class="perso-Info">
+              <img src="assets/image/tailwind.svg" alt="" />
+              <div class="headings">
+                <h3>Tailwind CSS</h3>
+                <h5>tailwindcss.com</h5>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="bx bx-dots-vertical-rounded"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Improve your front-end coding skills by building real projects.
+              Solve real-world HTML, CSS and JavaScript challenges whilst
+              working to professional designs.
+            </p>
+            <div class="skill">
+              <span>Practice</span>
+              <span>Learning</span>
+              <span>Comunity</span>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="card-foot-icon">
+              <div class="icons">
+                <span><i class="bx bx-show"></i> 47</span>
+                <span><i class="bx bx-time-five"></i> 23 Sep</span>
+                <span><i class="bx bx-credit-card-front"></i> 15 Jan</span>
+              </div>
+              <i class="bx bx-pin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
